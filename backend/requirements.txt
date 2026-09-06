@@ -1,0 +1,30 @@
+# Backend Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Web Framework ──────────────────────────────────────────────────────────────
+fastapi==0.111.1
+uvicorn[standard]==0.30.1
+
+# ── Database: Supabase ─────────────────────────────────────────────────────────
+supabase==2.5.3
+
+# ── LLM Providers ──────────────────────────────────────────────────────────────
+google-generativeai==0.7.2        # Primary: Gemini via AI Studio (free)
+anthropic==0.30.0                  # Optional secondary
+ollama==0.2.1                      # Local fallback (Ollama Python client)
+
+# ── Git Mining ─────────────────────────────────────────────────────────────────
+pydriller==2.6
+GitPython==3.1.43
+
+# ── Fuzzy Matching / Entity Linking ───────────────────────────────────────────
+rapidfuzz==3.9.3
+
+# ── HTTP & Config ──────────────────────────────────────────────────────────────
+requests==2.32.3
+httpx==0.27.0
+python-dotenv==1.0.1
+
+# ── Utilities ──────────────────────────────────────────────────────────────────
+pydantic==2.7.4                    # FastAPI request/response models
+python-multipart==0.0.9            # file uploads
